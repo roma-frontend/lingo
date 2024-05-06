@@ -42,7 +42,7 @@ export const Footer = ({
         )}
         {status === "completed" && (
           <Button
-            variant="sidebarOutline"
+            variant="default"
             size={isMobile ? "sm" : "lg"}
             onClick={() => (window.location.href = `/lesson/${lessonId}`)}
           >
