@@ -8,50 +8,50 @@ const Footer = () => {
         <Button size={"lg"} variant={"ghost"} className="w-full">
           <Image
             src="/hr.svg"
-            alt=""
-            height="35"
-            width="40"
-            className="mr-4 rounded-md"
+            alt="Croatian"
+            height={35}
+            width={40}
+            className="mr-4 rounded-md w-[35px] h-[40px]"
           />
           Croatian
         </Button>
         <Button size={"lg"} variant={"ghost"} className="w-full">
           <Image
             src="/es.svg"
-            alt=""
-            height="35"
-            width="40"
-            className="mr-4 rounded-md"
+            alt="Spanish"
+            height={35}
+            width={40}
+            className="mr-4 rounded-md w-[35px] h-[40px]"
           />
           Spanish
         </Button>
         <Button size={"lg"} variant={"ghost"} className="w-full">
           <Image
             src="/fr.svg"
-            alt=""
-            height="35"
-            width="40"
-            className="mr-4 rounded-md"
+            alt="French"
+            height={35}
+            width={40}
+            className="mr-4 rounded-md w-[35px] h-[40px]"
           />
           French
         </Button>
         <Button size={"lg"} variant={"ghost"} className="w-full">
           <Image
             src="/it.svg"
-            alt=""
-            height="35"
-            width="40"
-            className="mr-4 rounded-md"
+            alt="Italian"
+            height={35}
+            width={40}
+            className="mr-4 rounded-md w-[35px] h-[40px]"
           />
           Italian
         </Button>
         <Button size={"lg"} variant={"ghost"} className="w-full">
           <Image
             src="/jp.svg"
-            alt=""
-            height="35"
-            width="40"
-            className="mr-4 rounded-md"
+            alt="Jpapanese"
+            height={35}
+            width={40}
+            className="mr-4 rounded-md w-[35px] h-[40px]"
           />
           Japanese
         </Button>
