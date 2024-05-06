@@ -24,7 +24,7 @@ export const Quests = ({ points }: QuestsProps) => {
           const progress = (points / quest.value) * 100;
           return (
             <li
-              className="flex items-center justify-between w-full pb-4 gap-x-3 hover:bg-gray-200/30"
+              className="flex items-center justify-between w-full pb-4 gap-x-3"
               key={quest.title}
             >
               <Image src="/points.png" alt="Points" width={40} height={40} />

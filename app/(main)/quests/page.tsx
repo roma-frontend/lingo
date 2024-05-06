@@ -48,7 +48,7 @@ const QuestsPage = async () => {
               const progress = (userProgress.points / quest.value) * 100;
               return (
                 <li
-                  className="flex items-center justify-between w-full p-4 gap-x-4 border-t-2 hover:bg-gray-200/30"
+                  className="flex items-center justify-between w-full p-4 gap-x-4"
                   key={quest.title}
                 >
                   <Image
