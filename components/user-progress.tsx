@@ -1,8 +1,8 @@
+import { courses } from "@/db/schema";
 import { InfinityIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { courses } from "@/db/schema";
 
 type Props = {
   activeCourse: typeof courses.$inferSelect;
@@ -26,7 +26,7 @@ export const UserProgress = ({
             alt={activeCourse.title}
             width={32}
             height={32}
-            className="rounded-md border"
+            className="rounded-md"
           />
         </Button>
       </Link>
