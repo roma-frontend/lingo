@@ -6,7 +6,11 @@ export const Header = ({ title }: { title: string }) => {
   return (
     <div className="sticky top-0 bg-white pb-4 lg:pt-[28px] lg:mt-[-28px] flex items-center justify-between border-b-2 mb-5 text-neutral-400 lg:z-50">
       <Link href="/courses">
-        <Button variant={"ghost"} size={"sm"}>
+        <Button
+          variant={"ghost"}
+          size={"sm"}
+          aria-label="Button to go to courses"
+        >
           <ArrowLeft className="w-5 h-5 stroke-2 text-neutral-400" />
         </Button>
       </Link>

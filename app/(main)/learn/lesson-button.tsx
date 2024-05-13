@@ -54,10 +54,10 @@ export const LessonButton = ({
       href={href}
       aria-disabled={locked}
       style={{ pointerEvents: locked ? "none" : "auto" }}
+      aria-label="Lesson Button"
     >
       <div
         className="relative"
-        aria-label={`Lesson ${index + 1}`}
         style={{
           right: `${rightPosition}px`,
           marginTop: isFirst && !isCompleted ? 60 : 24,
