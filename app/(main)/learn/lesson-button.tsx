@@ -115,6 +115,7 @@ export const LessonButton = ({
           </Button>
         )}
       </div>
+      <p className="hidden">Start</p>
     </Link>
   );
 };
