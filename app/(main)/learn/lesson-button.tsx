@@ -57,7 +57,6 @@ export const LessonButton = ({
     >
       <div
         className="relative"
-        aria-label="Button to start a lesson"
         style={{
           right: `${rightPosition}px`,
           marginTop: isFirst && !isCompleted ? 60 : 24,
@@ -84,6 +83,7 @@ export const LessonButton = ({
                 size={"rounded"}
                 variant={locked ? "locked" : "secondary"}
                 className="h-[70px] w-[70px] border-b-8"
+                aria-label="Button to start a lesson"
               >
                 <Icon
                   className={cn(
@@ -115,7 +115,7 @@ export const LessonButton = ({
           </Button>
         )}
       </div>
-      <p className="hidden">Start</p>
+      <p className="hidden">click here</p>
     </Link>
   );
 };
