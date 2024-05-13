@@ -41,9 +41,9 @@ const QuestsPage = async () => {
       <FeedWrapper>
         <div className="w-full flex flex-col items-center">
           <Image src="/quests.png" alt="Quests" width={90} height={90} />
-          <h1 className="text-center font-bold text-neutral-800 text-2xl my-6">
+          <h3 className="text-center font-bold text-neutral-800 text-2xl my-6">
             Quests
-          </h1>
+          </h3>
           <p className="text-muted-foreground text-center text-lg mb-6">
             Complete quests by earning points and unlocking rewards.
           </p>
