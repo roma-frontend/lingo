@@ -35,6 +35,22 @@ body,
   transition: 350ms ease-in-out;
 }
 
+.cl-internal-ttumny {
+  background-color: #22c55e;
+  box-shadow: rgb(34, 197, 94) 0px 0px 0px 1px,
+    rgba(34, 197, 94, 0.07) 0px 1px 1px 0px inset,
+    rgba(34, 197, 94, 0.2) 0px 2px 3px 0px,
+    rgba(34, 197, 94, 0.24) 0px 1px 1px 0px !important;
+}
+.cl-internal-ttumny:hover {
+  background-color: rgb(34 197 94 / 0.8);
+}
+
+.cl-internal-180wb59,
+.cl-internal-1857dod {
+  display: none;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

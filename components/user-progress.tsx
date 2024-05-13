@@ -33,7 +33,7 @@ export const UserProgress = ({
       <Link href="/shop">
         <Button
           variant={"ghost"}
-          className="text-orange-500 flex items-center gap-2"
+          className="text-orange-500 flex items-center gap-2 font-semibold"
         >
           <Image src="/points.png" alt="points" width={28} height={28} />
           {points}
@@ -42,7 +42,7 @@ export const UserProgress = ({
       <Link href="/shop">
         <Button
           variant={"ghost"}
-          className="text-rose-500 flex items-center gap-2"
+          className="text-rose-500 flex items-center gap-2 font-semibold"
         >
           <Image src="/hearts.png" alt="hearts" width={22} height={22} />
           {hasActiveSubscribtion ? (
