@@ -53,6 +53,7 @@ export const LessonButton = ({
     <Link
       href={href}
       aria-disabled={locked}
+      aria-label={`Lesson ${index + 1}`}
       style={{ pointerEvents: locked ? "none" : "auto" }}
     >
       <div
