@@ -14,7 +14,7 @@ export const UnitBanner = ({ title, description }: Props) => {
         <span className="text-3xl font-bold">{title}</span>
         <p className="text-lg">{description}</p>
       </div>
-      <Link href="/lesson">
+      <Link href="/lesson" aria-label="Button to countinue">
         <Button
           size={"lg"}
           variant="secondary"

@@ -2,6 +2,7 @@ import { redirect } from "next/navigation";
 
 import { FeedWrapper } from "@/components/feed-wrapper";
 import { Promo } from "@/components/promo";
+import { Quests } from "@/components/quests";
 import { StickyWrapper } from "@/components/sticky-wrapper";
 import { UserProgress } from "@/components/user-progress";
 import {
@@ -14,7 +15,8 @@ import {
 import { lessons, units as unitsSchema } from "@/db/schema";
 import { Header } from "./header";
 import { Unit } from "./unit";
-import { Quests } from "@/components/quests";
+
+export const dynamic = "force-dynamic";
 
 const LearnPage = async () => {
   const userProgressData = getUserProgress();
