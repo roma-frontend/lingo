@@ -57,7 +57,7 @@ export const LessonButton = ({
     >
       <div
         className="relative"
-        aria-label="Lesson Button"
+        aria-label="Button to start a lesson"
         style={{
           right: `${rightPosition}px`,
           marginTop: isFirst && !isCompleted ? 60 : 24,
