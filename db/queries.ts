@@ -5,6 +5,8 @@ import { cache } from "react";
 import db from "./drizzle";
 import { challengeProgress, courses, units } from "./schema";
 
+export const dynamic = "force-dynamic";
+
 export const getUserProgress = cache(async () => {
   const { userId } = auth();
 
