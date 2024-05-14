@@ -1,12 +1,20 @@
+"use client";
+
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { createSelectors } from "@/store/create-selector";
+import { useSheetStore } from "@/store/use-sidebar-toggle";
 import { Menu } from "lucide-react";
 import { Sidebar } from "./sidebar";
 
 export const MobileSidebar = () => {
+  const useSidebar = createSelectors(useSheetStore);
+  const open = useSidebar.use.isOpen();
+  const close = useSidebar.use.toggleSheet();
+
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={close}>
       <SheetTrigger asChild>
-        <Menu className="text-white" />
+        <Menu className="text-white cursor-pointer hover:opacity-80" />
       </SheetTrigger>
       <SheetContent className="p-0 z-[100]" side="left">
         <Sidebar />
