@@ -9,7 +9,6 @@ const withSerwist = withSerwistInit({
   swDest: 'public/sw.js',
   cacheOnNavigation: true,
   disable: true,
-  register: false,
   reloadOnOnline: true,
 });
 
