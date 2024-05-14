@@ -8,7 +8,6 @@ const withSerwist = withSerwistInit({
   swSrc: '/sw.ts',
   swDest: 'public/sw.js',
   cacheOnNavigation: true,
-  disable: true,
   reloadOnOnline: true,
 });
 
