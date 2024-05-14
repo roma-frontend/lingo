@@ -25,6 +25,11 @@ const nextConfig = {
       },
     ];
   },
+  experimental: {
+    optimizePackageImports: [
+      "@radix-ui"
+    ]
+  }
 };
 
 export default nextConfig;
