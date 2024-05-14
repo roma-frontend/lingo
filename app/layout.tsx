@@ -1,7 +1,11 @@
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import { ExitModal } from "@/components/modals/exit-mdal";
 import { HeartsModal } from "@/components/modals/hearts-modal";
 import { PracticeModal } from "@/components/modals/practice-modal";
 import { Toaster } from "@/components/ui/sonner";
+import { WebVitals } from "@/components/web-vitals";
 import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata, Viewport } from "next";
 import { Nunito } from "next/font/google";
@@ -67,7 +71,10 @@ export default function RootLayout({
           <ExitModal />
           <HeartsModal />
           <PracticeModal />
+          <WebVitals />
           {children}
+          <Analytics />
+          <SpeedInsights />
         </body>
       </html>
     </ClerkProvider>

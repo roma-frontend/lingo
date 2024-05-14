@@ -5,7 +5,7 @@ import withSerwistInit from '@serwist/next';
 
 const withSerwist = withSerwistInit({
   swSrc: '/sw.ts',
-  swDest: 'public/sw.js',
+  swDest: '/sw.js',
 });
 
 export default withSerwist({
