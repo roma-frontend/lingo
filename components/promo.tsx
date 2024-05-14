@@ -10,7 +10,7 @@ export const Promo = () => {
       <div className="space-y-2">
         <div className="flex items-center gap-x-2">
           <Image src="/images/unlimited.png" alt="Pro" width={26} height={26} />
-          <span className="font-bold text-lg">Upgrade</span>
+          <h1 className="font-bold text-lg">Upgrade</h1>
         </div>
         <p className="text-muted-foreground">Get unlimited hearts and more!</p>
       </div>
