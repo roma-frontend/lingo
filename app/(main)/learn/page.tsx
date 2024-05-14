@@ -40,7 +40,6 @@ const LearnPage = async () => {
     lessonPercentageData,
     userSubscriptionData,
     {
-      cache: "no-store",
       next: {
         revalidate,
       },
