@@ -4,7 +4,7 @@ import withSerwistInit from '@serwist/next';
 
 
 const withSerwist = withSerwistInit({
-  scope: "/learn/",
+  scope: "/",
   swSrc: '/sw.ts',
   swDest: 'public/sw.js',
   cacheOnNavigation: true,
@@ -14,6 +14,7 @@ const withSerwist = withSerwistInit({
 
 export default withSerwist({
   reactStrictMode: true,
+  productionBrowserSourceMaps: true,
   async headers() {
     return [
       {
@@ -41,7 +42,7 @@ export default withSerwist({
   },
   experimental: {
     optimizePackageImports: [
-      "@radix-ui"
+      "@radix-ui", "react-use", "lucide-react", "react-circular-progressbar", "react-confetti", "tailwind-animate"
     ]
   }
 })
