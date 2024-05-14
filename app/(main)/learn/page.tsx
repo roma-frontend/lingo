@@ -18,6 +18,8 @@ import { Unit } from "./unit";
 
 export const dynamic = "force-dynamic";
 
+export const revalidate = 200;
+
 const LearnPage = async () => {
   const userProgressData = getUserProgress();
   const courseProgressData = getCourseProgress();
@@ -37,6 +39,12 @@ const LearnPage = async () => {
     courseProgressData,
     lessonPercentageData,
     userSubscriptionData,
+    {
+      cache: "force-cache",
+      next: {
+        revalidate,
+      },
+    },
   ]);
 
   if (!userProgress || !userProgress.activeCourse) {
