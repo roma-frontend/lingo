@@ -16,8 +16,6 @@ import { lessons, units as unitsSchema } from "@/db/schema";
 import { Header } from "./header";
 import { Unit } from "./unit";
 
-export const dynamic = "force-dynamic";
-
 const LearnPage = async () => {
   const userProgressData = getUserProgress();
   const courseProgressData = getCourseProgress();
@@ -38,7 +36,7 @@ const LearnPage = async () => {
     lessonPercentageData,
     userSubscriptionData,
     {
-      cache: "force-cache",
+      cache: "no-store",
     },
   ]);
 
