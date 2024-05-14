@@ -49,10 +49,12 @@ export const Quiz = ({
   });
   const { width, height } = useWindowSize();
   const router = useRouter();
-  const [finishAudio] = useAudio({ src: "/finish.mp3", autoPlay: true });
-  const [correctAudio, _c, correctControls] = useAudio({ src: "/correct.mp3" });
+  const [finishAudio] = useAudio({ src: "/audio/finish.mp3", autoPlay: true });
+  const [correctAudio, _c, correctControls] = useAudio({
+    src: "/audio/correct.mp3",
+  });
   const [incorrectAudio, _i, incorrectControls] = useAudio({
-    src: "/no_correct.mp3",
+    src: "/audio/no_correct.mp3",
   });
 
   const [lessonId] = useState(initialLessonId);
