@@ -18,7 +18,7 @@ export const ResultCard = ({ variant, value }: ResultCardProps) => {
     >
       <div
         className={cn(
-          "p-1.5 text-white rounded-t-xl font-bold text-center uppercase text-xs",
+          "p-1.5 text-[var(--main-text-color)] rounded-t-xl font-bold text-center uppercase text-xs",
           variant === "hearts" && "bg-rose-500",
           variant === "points" && "bg-orange-400"
         )}

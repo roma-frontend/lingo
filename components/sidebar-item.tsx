@@ -5,6 +5,7 @@ import { useSheetStore } from "@/store/use-sidebar-toggle";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useMedia } from "react-use";
 import { Button } from "./ui/button";
 
 type Props = {
@@ -18,9 +19,12 @@ export const SidebarItem = ({ label, iconSrc, href }: Props) => {
   const close = useSidebar.use.toggleSheet();
   const pathname = usePathname();
   const active = pathname === href;
+  const isMobile = useMedia("(max-width: 1024px)");
 
   const handleItemClick = () => {
-    close();
+    if (!!isMobile) {
+      close();
+    }
   };
 
   return (

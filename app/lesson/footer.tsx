@@ -29,7 +29,7 @@ export const Footer = ({
     >
       <div className="max-w-[1140px] h-full mx-auto flex items-center justify-between px-6 lg:px-10">
         {status === "correct" && (
-          <div className="text-green-500 font-bold text-base lg:text-2xl flex items-center ">
+          <div className="text-[var(--main-bg-color)] font-bold text-base lg:text-2xl flex items-center ">
             <CheckCircle className="h-6 w-6 lg:h-10 lg:w-10 mr-4" />
             Nicely done!
           </div>
