@@ -1,5 +1,15 @@
+import withSerwistInit from '@serwist/next';
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+
+const withSerwist = withSerwistInit({
+  swSrc: '/sw.ts',
+  swDest: 'public/sw.js',
+});
+
+export default withSerwist({
+  reactStrictMode: true,
   async headers() {
     return [
       {
@@ -30,6 +40,4 @@ const nextConfig = {
       "@radix-ui"
     ]
   }
-};
-
-export default nextConfig;
+})

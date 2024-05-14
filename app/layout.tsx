@@ -9,9 +9,44 @@ import "./globals.css";
 
 const font = Nunito({ subsets: ["latin"] });
 
+const APP_NAME = "Lingo";
+const APP_DEFAULT_TITLE = "Lingo";
+const APP_TITLE_TEMPLATE = "%s - Lingo";
+const APP_DESCRIPTION = "Learn, practice, and master new languages with Lingo!";
+
 export const metadata: Metadata = {
-  title: "Lingo",
+  applicationName: APP_NAME,
+  title: {
+    default: APP_DEFAULT_TITLE,
+    template: APP_TITLE_TEMPLATE,
+  },
   description: "Learn, practice, and master new languages with Lingo!",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: APP_DEFAULT_TITLE,
+    startupImage: "/learn.svg",
+  },
+  formatDetection: {
+    telephone: false,
+  },
+  openGraph: {
+    type: "website",
+    siteName: APP_NAME,
+    title: {
+      default: APP_DEFAULT_TITLE,
+      template: APP_TITLE_TEMPLATE,
+    },
+    description: APP_DESCRIPTION,
+  },
+  twitter: {
+    card: "summary",
+    title: {
+      default: APP_DEFAULT_TITLE,
+      template: APP_TITLE_TEMPLATE,
+    },
+    description: APP_DESCRIPTION,
+  },
 };
 
 export const viewport: Viewport = {
@@ -25,7 +60,8 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
+      <html lang="en" dir="ltr">
+        <head />
         <body className={font.className}>
           <Toaster />
           <ExitModal />

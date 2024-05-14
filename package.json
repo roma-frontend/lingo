@@ -20,6 +20,9 @@
     "@radix-ui/react-progress": "^1.0.3",
     "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
+    "@serwist/next": "^9.0.2",
+    "@serwist/precaching": "^9.0.2",
+    "@serwist/sw": "^9.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "dotenv": "^16.4.5",
@@ -50,6 +53,7 @@
     "eslint-config-next": "14.2.3",
     "pg": "^8.11.5",
     "postcss": "^8",
+    "serwist": "^9.0.2",
     "tailwindcss": "^3.4.1",
     "tsx": "^4.8.2",
     "typescript": "^5"
