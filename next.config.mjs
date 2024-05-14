@@ -4,8 +4,13 @@ import withSerwistInit from '@serwist/next';
 
 
 const withSerwist = withSerwistInit({
+  scope: "/learn/",
   swSrc: '/sw.ts',
   swDest: 'public/sw.js',
+  cacheOnNavigation: true,
+  disable: true,
+  register: false,
+  reloadOnOnline: true,
 });
 
 export default withSerwist({
