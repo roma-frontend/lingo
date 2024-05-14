@@ -27,7 +27,7 @@ export const Header = ({
       <Progress value={percentage} />
       <div className="text-rose-500 flex items-center font-bold">
         <Image
-          src="/hearts.png"
+          src="/images/hearts.png"
           alt="Heart"
           width={28}
           height={28}

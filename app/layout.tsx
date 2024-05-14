@@ -1,15 +1,20 @@
+import "./globals.css";
+
+import { Nunito } from "next/font/google";
+
+import { Toaster } from "@/components/ui/sonner";
+
+import { ClerkProvider } from "@clerk/nextjs";
+
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import type { Metadata, Viewport } from "next";
+
+import { WebVitals } from "@/components/web-vitals";
 
 import { ExitModal } from "@/components/modals/exit-mdal";
 import { HeartsModal } from "@/components/modals/hearts-modal";
 import { PracticeModal } from "@/components/modals/practice-modal";
-import { Toaster } from "@/components/ui/sonner";
-import { WebVitals } from "@/components/web-vitals";
-import { ClerkProvider } from "@clerk/nextjs";
-import type { Metadata, Viewport } from "next";
-import { Nunito } from "next/font/google";
-import "./globals.css";
 
 const font = Nunito({ subsets: ["latin"] });
 
@@ -29,7 +34,7 @@ export const metadata: Metadata = {
     capable: true,
     statusBarStyle: "default",
     title: APP_DEFAULT_TITLE,
-    startupImage: "/learn.svg",
+    startupImage: "/images/learn.svg",
   },
   formatDetection: {
     telephone: false,

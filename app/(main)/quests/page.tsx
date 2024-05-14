@@ -40,7 +40,7 @@ const QuestsPage = async () => {
       </StickyWrapper>
       <FeedWrapper>
         <div className="w-full flex flex-col items-center">
-          <Image src="/quests.png" alt="Quests" width={90} height={90} />
+          <Image src="/images/quests.png" alt="Quests" width={90} height={90} />
           <h3 className="text-center font-bold text-neutral-800 text-2xl my-6">
             Quests
           </h3>
@@ -56,7 +56,7 @@ const QuestsPage = async () => {
                   key={quest.title}
                 >
                   <Image
-                    src="/points.png"
+                    src="/images/points.png"
                     alt="Points"
                     width={60}
                     height={60}

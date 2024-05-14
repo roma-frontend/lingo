@@ -119,22 +119,22 @@ const main = async () => {
         challengeId: 1,
         text: "el hombre",
         correct: true,
-        imageSrc: "/man.png",
-        audioSrc: "/es_man.mp3",
+        imageSrc: "/images/man.png",
+        audioSrc: "/audio/es_man.mp3",
       },
       {
         challengeId: 1,
         text: "la mujer",
         correct: false,
-        imageSrc: "/woman.png",
-        audioSrc: "/es_woman.mp3",
+        imageSrc: "/images/woman.png",
+        audioSrc: "/audio/es_woman.mp3",
       },
       {
         challengeId: 1,
         text: "el robot",
         correct: false,
-        imageSrc: "/robot.png",
-        audioSrc: "/es_robot.mp3",
+        imageSrc: "/images/robot.png",
+        audioSrc: "/audio/es_robot.mp3",
       },
     ]);
 
@@ -143,19 +143,19 @@ const main = async () => {
         challengeId: 2,
         text: "el hombre",
         correct: false,
-        audioSrc: "/es_man.mp3",
+        audioSrc: "/audio/es_man.mp3",
       },
       {
         challengeId: 2,
         text: "la mujer",
         correct: true,
-        audioSrc: "/es_woman.mp3",
+        audioSrc: "/audio/es_woman.mp3",
       },
       {
         challengeId: 2,
         text: "el robot",
         correct: false,
-        audioSrc: "/es_robot.mp3",
+        audioSrc: "/audio/es_robot.mp3",
       },
     ]);
 
@@ -165,21 +165,21 @@ const main = async () => {
         text: "el hombre",
         correct: false,
         imageSrc: "/man.png",
-        audioSrc: "/es_man.mp3",
+        audioSrc: "/audio/es_man.mp3",
       },
       {
         challengeId: 3,
         text: "la mujer",
         correct: false,
         imageSrc: "/woman.png",
-        audioSrc: "/es_woman.mp3",
+        audioSrc: "/audio/es_woman.mp3",
       },
       {
         challengeId: 3,
         text: "el robot",
         correct: true,
         imageSrc: "/robot.png",
-        audioSrc: "/es_robot.mp3",
+        audioSrc: "/audio/es_robot.mp3",
       },
     ]);
 

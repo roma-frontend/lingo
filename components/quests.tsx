@@ -27,7 +27,12 @@ export const Quests = ({ points }: QuestsProps) => {
               className="flex items-center justify-between w-full pb-4 gap-x-3"
               key={quest.title}
             >
-              <Image src="/points.png" alt="Points" width={40} height={40} />
+              <Image
+                src="/images/points.png"
+                alt="Points"
+                width={40}
+                height={40}
+              />
               <div className="w-full flex flex-col items-center gap-y-2">
                 <p className="font-bold text-sm text-neutral-700">
                   {quest.title}

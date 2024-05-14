@@ -32,7 +32,12 @@ export const PracticeModal = () => {
       <DialogContent className="max-w-md">
         <DialogHeader>
           <div className="flex items-center justify-center mb-5">
-            <Image src="/hearts.png" alt="Mascot" width={100} height={100} />
+            <Image
+              src="/images/hearts.png"
+              alt="Mascot"
+              width={100}
+              height={100}
+            />
           </div>
           <DialogTitle className="text-center font-bold text-2xl">
             Practice lesson

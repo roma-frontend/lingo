@@ -35,7 +35,7 @@ export const UserProgress = ({
           variant={"ghost"}
           className="text-orange-500 flex items-center gap-2 font-semibold"
         >
-          <Image src="/points.png" alt="points" width={28} height={28} />
+          <Image src="/images/points.png" alt="points" width={28} height={28} />
           {points}
         </Button>
       </Link>
@@ -44,7 +44,7 @@ export const UserProgress = ({
           variant={"ghost"}
           className="text-rose-500 flex items-center gap-2 font-semibold"
         >
-          <Image src="/hearts.png" alt="hearts" width={22} height={22} />
+          <Image src="/images/hearts.png" alt="hearts" width={22} height={22} />
           {hasActiveSubscribtion ? (
             <InfinityIcon className="w-4 h-4 stroke-[3]" />
           ) : (

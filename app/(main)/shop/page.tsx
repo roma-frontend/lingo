@@ -37,7 +37,7 @@ const ShopPage = async () => {
       </StickyWrapper>
       <FeedWrapper>
         <div className="w-full flex flex-col items-center">
-          <Image src="/shop.png" alt="Shop" width={90} height={90} />
+          <Image src="/images/shop.png" alt="Shop" width={90} height={90} />
           <h1 className="text-center font-bold text-neutral-800 text-2xl my-6">
             Shop
           </h1>

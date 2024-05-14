@@ -157,14 +157,14 @@ export const Quiz = ({
         />
         <div className="flex flex-col gap-y-4 lg:gap-y-8 max-w-kg mx-auto text-center items-center justify-center h-full">
           <Image
-            src="/finish.png"
+            src="/images/finish.png"
             alt="Finish"
             width={100}
             height={100}
             className="hidden lg:block"
           />
           <Image
-            src="/finish.png"
+            src="/images/finish.png"
             alt="Finish"
             width={50}
             height={50}
