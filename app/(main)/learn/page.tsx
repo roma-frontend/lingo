@@ -35,9 +35,6 @@ const LearnPage = async () => {
     courseProgressData,
     lessonPercentageData,
     userSubscriptionData,
-    {
-      cache: "no-store",
-    },
   ]);
 
   if (!userProgress || !userProgress.activeCourse) {
