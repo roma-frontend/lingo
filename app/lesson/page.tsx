@@ -2,6 +2,8 @@ import { getLesson, getUserProgress, getUserSubscriptions } from "@/db/queries";
 import { redirect } from "next/navigation";
 import { Quiz } from "./quiz";
 
+export const dynamic = "force-dynamic";
+
 const LessonPage = async () => {
   const lessonData = await getLesson();
   const userProgressData = await getUserProgress();

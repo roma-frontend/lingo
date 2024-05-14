@@ -8,6 +8,8 @@ type Props = {
   };
 };
 
+export const dynamic = "force-dynamic";
+
 const LessonIdPage = async ({ params }: Props) => {
   const lessonData = await getLesson(params.lessonId);
   const userProgressData = await getUserProgress();
