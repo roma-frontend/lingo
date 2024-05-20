@@ -14,7 +14,10 @@ export const MobileSidebar = () => {
   return (
     <Sheet open={open} onOpenChange={close}>
       <SheetTrigger asChild>
-        <Menu className="text-[var(--main-text-color)] cursor-pointer hover:opacity-80" />
+        <Menu
+          className="text-[var(--main-text-color)] cursor-pointer hover:opacity-80"
+          aria-label="Button to open sidebar"
+        />
       </SheetTrigger>
       <SheetContent className="p-0 z-[100]" side="left">
         <Sidebar />
